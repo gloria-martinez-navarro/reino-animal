@@ -4,35 +4,45 @@ public class Principal {
 
     public static void main(String[] args) {
 
-/*
-Esquema de clases de reino-animal        
-                  Animal
-                    |
-                    |
-                Mamifero
-                /       \
-               /         \        
-          Perro          Gato
-*/
+/**
+ * Clase principal que contiene el método main para ejecutar el programa.
+ * Este programa demuestra el uso de las clases Animal, Mamifero, Perro y Gato.
+ * 
+ * <p>Esquema de clases de reino-animal:</p>
+ * <pre>
+ *                  Animal
+ *                    |
+ *                    |
+ *                Mamifero
+ *                /       \
+ *               /         \        
+ *          Perro          Gato
+ * </pre>
+ * 
+ * @author Tu Nombre
+ * 
+ */
 
-
+        // Creación de instancias de las clases
         Animal animal = new Animal("Delfín");
-
         Mamifero mamifero = new Mamifero("León");
-
         Perro toby = new Perro("Lacasito");
-
         Gato isidoro = new Gato("Galleta");
+        
+        // Establecer la cantidad de pelos del gato
         isidoro.pelos = 4;
 
+        // Polimorfismo: asignar un Gato a una variable de tipo Animal
         animal = isidoro;
 
+       
         Gato g;
         g = (Gato) animal;
         System.out.println("pelos de gato: " + g.pelos);
 
+        // Creación de un array de Animales
         Animal array[] = new Animal[4];
-
+        
         array[0] = animal;
         array[1] = mamifero;
         array[2] = toby;
