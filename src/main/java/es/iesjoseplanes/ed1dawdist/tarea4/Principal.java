@@ -19,7 +19,7 @@ public class Principal {
  *          Perro          Gato
  * </pre>
  * 
- * @author Tu Nombre
+ * @author Gloria
  * 
  */
 
